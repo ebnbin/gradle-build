@@ -6,6 +6,7 @@ rootProject.extra["versionMap"] = mapOf(
 rootProject.extra["dependencyMap"] = mapOf(
     "com.android.tools.build:gradle" to "4.0.2", // https://developer.android.com/studio/releases/gradle-plugin https://maven.google.com/web/index.html
     "org.jetbrains.kotlin:kotlin-gradle-plugin" to "1.4.30", // https://github.com/jetbrains/kotlin
+    "org.jetbrains.kotlinx:kotlinx-coroutines-android" to "1.4.2", // https://github.com/Kotlin/kotlinx.coroutines
     "androidx.core:core-ktx" to "1.3.2", // https://developer.android.com/jetpack/androidx/versions
     "androidx.appcompat:appcompat" to "1.2.0",
     "androidx.annotation:annotation" to "1.1.0",
@@ -17,5 +18,7 @@ rootProject.extra["dependencyMap"] = mapOf(
     "androidx.recyclerview:recyclerview" to "1.1.0",
     "androidx.cardview:cardview" to "1.0.0",
     "androidx.viewpager2:viewpager2" to "1.0.0",
-    "com.google.android.material:material" to "1.3.0" // https://github.com/material-components/material-components-android https://material.io/develop/android/docs/getting-started
+    "com.google.android.material:material" to "1.3.0", // https://github.com/material-components/material-components-android https://material.io/develop/android/docs/getting-started
+    "com.google.code.gson:gson" to "2.8.6", // https://github.com/google/gson
+    "com.github.bumptech.glide:glide" to "4.12.0" // https://github.com/bumptech/glide
 )
