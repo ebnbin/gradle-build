@@ -1,3 +1,8 @@
+rootProject.extra["versionMap"] = mapOf(
+    "compileSdkVersion" to "30",
+    "minSdkVersion" to "21",
+    "targetSdkVersion" to "30"
+)
 rootProject.extra["dependencyMap"] = mapOf(
     "com.android.tools.build:gradle" to "4.0.2", // https://developer.android.com/studio/releases/gradle-plugin https://maven.google.com/web/index.html
     "org.jetbrains.kotlin:kotlin-gradle-plugin" to "1.4.30", // https://github.com/jetbrains/kotlin
