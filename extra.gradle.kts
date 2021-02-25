@@ -14,6 +14,7 @@ rootProject.extra["dependencyMap"] = mapOf(
     "androidx.lifecycle:lifecycle-livedata-ktx" to "2.3.0",
     "androidx.activity:activity-ktx" to "1.2.0",
     "androidx.fragment:fragment-ktx" to "1.2.5",
+    "androidx.coordinatorlayout:coordinatorlayout" to "1.1.0",
     "androidx.constraintlayout:constraintlayout" to "2.0.4",
     "androidx.recyclerview:recyclerview" to "1.1.0",
     "androidx.cardview:cardview" to "1.0.0",
