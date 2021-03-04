@@ -1,5 +1,3 @@
-// 0.0.9
-
 rootProject.extra["versionMap"] = mapOf(
     "compileSdkVersion" to "30", // https://developer.android.com/studio/releases/platforms
     "minSdkVersion" to "21",
