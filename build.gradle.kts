@@ -9,8 +9,8 @@ repositories {
 
 publishing {
     publications {
-        create<MavenPublication>("java") {
-            from(components["java"])
+        create<MavenPublication>("kotlin") {
+            from(components["kotlin"])
         }
     }
 }
