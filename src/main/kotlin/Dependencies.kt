@@ -5,7 +5,7 @@ object Dependencies {
     )
     val comGithubEbnbin_ebui = DevDependency(
         name = "ebui",
-        version = "0.0.13"
+        version = "0.0.14"
     )
     val comGithubEbnbin_ebdev = DevDependency(
         name = "ebdev",
