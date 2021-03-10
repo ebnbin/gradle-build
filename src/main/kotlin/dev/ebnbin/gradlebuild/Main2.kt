@@ -4,7 +4,7 @@ import org.gradle.api.Project
 import java.io.File
 import java.util.Properties
 
-fun Project.localProperties(): Properties {
+fun Project.localProperties2(): Properties {
     val properties = Properties()
     File(rootDir, "local.properties")
         .takeIf { it.isFile }
@@ -12,8 +12,8 @@ fun Project.localProperties(): Properties {
     return properties
 }
 
-object Main {
-    fun main(): Int {
+object Main2 {
+    fun main2(): Int {
         return 0
     }
 }
