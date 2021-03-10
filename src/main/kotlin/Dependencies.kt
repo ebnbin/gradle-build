@@ -7,6 +7,14 @@ object Dependencies {
         name = "ebui",
         version = "0.0.13"
     )
+    val comGithubEbnbin_ebdev = DevDependency(
+        name = "ebdev",
+        version = "0.0.3"
+    )
+    val comGithubEbnbin_openmojiPicker = DevDependency(
+        name = "openmoji-picker",
+        version = "0.0.18"
+    )
 
     val comAndroidToolsBuild_gradle = Dependency(
         group = "com.android.tools.build",

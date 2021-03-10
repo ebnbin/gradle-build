@@ -8,11 +8,15 @@ data class DevDependency(
 
     val id: String = "$group:$name"
 
-    val notation: String = if (version == null) id else "$id:$version"
+    private val notation: String = if (version == null) id else "$id:$version"
+
+    fun notation(version: String? = null): String {
+        return if (version == null) notation else "$id:$version"
+    }
 
     fun devNotation(project: Project, version: String? = null): Any {
         return if (project.rootProject.localProperties()["dev.publish"] != "false") {
-            if (version == null) notation else "$id:$version"
+            notation(version)
         } else {
             project.project(":$name")
         }

@@ -5,7 +5,11 @@ data class Dependency(
 ) {
     val id: String = "$group:$name"
 
-    val notation: String = if (version == null) id else "$id:$version"
+    private val notation: String = if (version == null) id else "$id:$version"
+
+    fun notation(version: String? = null): String {
+        return if (version == null) notation else "$id:$version"
+    }
 
     override fun equals(other: Any?): Boolean {
         if (this === other) return true
