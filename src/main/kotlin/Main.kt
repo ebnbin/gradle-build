@@ -1,4 +1,5 @@
 import org.gradle.api.Project
+import org.gradle.kotlin.dsl.extra
 import java.io.File
 import java.util.Properties
 
@@ -10,8 +11,6 @@ fun Project.localProperties(): Properties {
     return properties
 }
 
-object Main {
-    fun main(): Int {
-        return 0
-    }
+fun Project.extraProperties(): MutableMap<String, Any?> {
+    return extra.properties
 }
