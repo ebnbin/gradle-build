@@ -1,5 +1,3 @@
-package dev.ebnbin.gradlebuild
-
 import org.gradle.api.Project
 import java.io.File
 import java.util.Properties
