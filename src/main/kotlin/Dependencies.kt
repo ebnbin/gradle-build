@@ -1,4 +1,13 @@
 object Dependencies {
+    val comGithubEbnbin_eb = DevDependency(
+        name = "eb",
+        version = "0.0.27"
+    )
+    val comGithubEbnbin_ebui = DevDependency(
+        name = "ebui",
+        version = "0.0.13"
+    )
+
     val comAndroidToolsBuild_gradle = Dependency(
         group = "com.android.tools.build",
         name = "gradle",
