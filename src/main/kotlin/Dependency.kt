@@ -1,15 +1,7 @@
-data class Dependency(
-    val group: String,
-    val name: String,
-    val version: String? = null
-) {
-    val id: String = "$group:$name"
+import org.gradle.api.Project
 
-    private val notation: String = if (version == null) id else "$id:$version"
-
-    fun notation(version: String? = null): String {
-        return if (version == null) notation else "$id:$version"
-    }
+sealed class Dependency {
+    abstract val id: String
 
     override fun equals(other: Any?): Boolean {
         if (this === other) return true
@@ -21,5 +13,33 @@ data class Dependency(
 
     override fun hashCode(): Int {
         return id.hashCode()
+    }
+}
+
+class DefaultDependency(
+    override val id: String,
+    version: String
+) : Dependency() {
+    private val notation: String = "$id:$version"
+
+    fun notation(version: String? = null): String {
+        return if (version == null) notation else "$id:$version"
+    }
+}
+
+class DevDependency(
+    private val name: String,
+    version: String
+) : Dependency() {
+    override val id: String = "com.github.ebnbin:$name"
+
+    private val notation: String = "$id:$version"
+
+    fun devNotation(project: Project, version: String? = null): Any {
+        return if (project.rootProject.getLocalProperty("dev.publish") != "false") {
+            if (version == null) notation else "$id:$version"
+        } else {
+            project.project(":$name")
+        }
     }
 }
