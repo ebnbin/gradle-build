@@ -9,11 +9,11 @@ object Dependencies {
     )
     val comGithubEbnbin_ebdev = DevDependency(
         name = "ebdev",
-        version = "0.0.4"
+        version = "0.0.5"
     )
     val comGithubEbnbin_openmojiPicker = DevDependency(
         name = "openmoji-picker",
-        version = "0.0.19"
+        version = "0.0.20"
     )
 
     // https://developer.android.com/jetpack/androidx/versions
