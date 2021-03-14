@@ -31,7 +31,7 @@ class DevDependency(
     private val name: String,
     version: String
 ) : Dependency() {
-    override val id: String = "com.github.ebnbin:$name"
+    override val id: String = "com.github.dev-ebnbin:$name"
 
     private val notation: String = "$id:$version"
 
