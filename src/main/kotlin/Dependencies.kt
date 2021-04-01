@@ -137,7 +137,7 @@ object Dependencies {
     // https://github.com/jetbrains/kotlin
     val orgJetbrainsKotlin_kotlinGradlePlugin = DefaultDependency(
         id = "org.jetbrains.kotlin:kotlin-gradle-plugin",
-        version = "1.4.30"
+        version = "1.4.31"
     )
 
     // https://github.com/Kotlin/kotlinx.coroutines
