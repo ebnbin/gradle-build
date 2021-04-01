@@ -32,15 +32,15 @@ object Dependencies {
     )
     val androidxComposeMaterial_material = DefaultDependency(
         id = "androidx.compose.material:material",
-        version = "1.0.0-beta03"
+        version = Versions.compose
     )
     val androidxComposeMaterial_materialIconsExtended = DefaultDependency(
         id = "androidx.compose.material:material-icons-extended",
-        version = "1.0.0-beta03"
+        version = Versions.compose
     )
     val androidxComposeRuntime_runtimeLivedata = DefaultDependency(
         id = "androidx.compose.runtime:runtime-livedata",
-        version = "1.0.0-beta03"
+        version = Versions.compose
     )
     val androidxConstraintlayout_constraintlayout = DefaultDependency(
         id = "androidx.constraintlayout:constraintlayout",
