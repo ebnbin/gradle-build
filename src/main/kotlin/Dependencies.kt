@@ -16,7 +16,7 @@ object Dependencies {
     )
     val androidxAppcompat_appcompat = DefaultDependency(
         id = "androidx.appcompat:appcompat",
-        version = "1.2.0"
+        version = "1.3.0-rc01"
     )
     val androidxCardview_cardview = DefaultDependency(
         id = "androidx.cardview:cardview",
