@@ -1,20 +1,8 @@
 object Dependencies {
-    val comGithubDevEbnbin_eb = DevDependency(
-        name = "eb",
-        version = "0.0.29"
-    )
-    val comGithubDevEbnbin_ebui = DevDependency(
-        name = "ebui",
-        version = "0.0.15"
-    )
-    val comGithubDevEbnbin_ebdev = DevDependency(
-        name = "ebdev",
-        version = "0.0.5"
-    )
-    val comGithubDevEbnbin_openmojiPicker = DevDependency(
-        name = "openmoji-picker",
-        version = "0.0.20"
-    )
+    val comGithubDevEbnbin_eb = DevDependency("eb")
+    val comGithubDevEbnbin_ebui = DevDependency("ebui")
+    val comGithubDevEbnbin_ebdev = DevDependency("ebdev")
+    val comGithubDevEbnbin_openmojiPicker = DevDependency("openmoji-picker")
 
     // https://developer.android.com/jetpack/androidx/versions
     // https://maven.google.com/web/index.html

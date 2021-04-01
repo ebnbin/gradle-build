@@ -32,24 +32,19 @@ class ComposeDependency(
     composeVersion: String,
     version: String = composeVersion
 ) : DefaultDependency(id, version) {
-    private val composeNotation: String = "$id:$composeVersion"
+    private val composeNotation: String = "${this.id}:$composeVersion"
 
     fun composeNotation(composeVersion: String? = null): String {
         return if (composeVersion == null) composeNotation else "$id:$composeVersion"
     }
 }
 
-class DevDependency(
-    private val name: String,
-    version: String
-) : Dependency() {
+class DevDependency(private val name: String) : Dependency() {
     override val id: String = "com.github.dev-ebnbin:$name"
 
-    private val notation: String = "$id:$version"
-
-    fun devNotation(project: Project, version: String? = null): Any {
+    fun devNotation(project: Project, version: String): Any {
         return if (project.rootProject.getLocalProperty("dev.publish") != "false") {
-            if (version == null) notation else "$id:$version"
+            "$id:$version"
         } else {
             project.project(":$name")
         }
