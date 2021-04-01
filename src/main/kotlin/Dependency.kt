@@ -30,7 +30,7 @@ open class DefaultDependency(
 class DevDependency(private val name: String) : Dependency() {
     override val id: String = "com.github.dev-ebnbin:$name"
 
-    fun devNotation(project: Project, version: String?): Any {
+    fun devNotation(project: Project, version: String? = null): Any {
         return if (project.rootProject.getLocalProperty("dev.publish") != "false") {
             "$id:${requireNotNull(version)}"
         } else {
