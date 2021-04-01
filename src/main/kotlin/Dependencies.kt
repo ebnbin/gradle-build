@@ -10,10 +10,6 @@ object Dependencies {
         id = "androidx.activity:activity-ktx",
         version = "1.2.2"
     )
-    val androidxActivity_activityCompose = ComposeDependency(
-        id = "androidx.activity:activity-compose",
-        composeVersion = "1.3.0-alpha05"
-    )
     val androidxAnnotation_annotation = DefaultDependency(
         id = "androidx.annotation:annotation",
         version = "1.2.0"
@@ -29,18 +25,6 @@ object Dependencies {
     val androidxCollection_collectionKtx = DefaultDependency(
         id = "androidx.collection:collection-ktx",
         version = "1.1.0"
-    )
-    val androidxComposeMaterial_material = ComposeDependency(
-        id = "androidx.compose.material:material",
-        composeVersion = "1.0.0-beta03"
-    )
-    val androidxComposeMaterial_materialIconsExtended = ComposeDependency(
-        id = "androidx.compose.material:material-icons-extended",
-        composeVersion = "1.0.0-beta03"
-    )
-    val androidxComposeRuntime_runtimeLivedata = ComposeDependency(
-        id = "androidx.compose.runtime:runtime-livedata",
-        composeVersion = "1.0.0-beta03"
     )
     val androidxConstraintlayout_constraintlayout = DefaultDependency(
         id = "androidx.constraintlayout:constraintlayout",
@@ -65,10 +49,6 @@ object Dependencies {
     val androidxLifecycle_lifecycleLivedataKtx = DefaultDependency(
         id = "androidx.lifecycle:lifecycle-livedata-ktx",
         version = "2.3.1"
-    )
-    val androidxLifecycle_lifecycleViewmodelCompose = ComposeDependency(
-        id = "androidx.lifecycle:lifecycle-viewmodel-compose",
-        composeVersion = "1.0.0-alpha03"
     )
     val androidxLifecycle_lifecycleViewmodelKtx = DefaultDependency(
         id = "androidx.lifecycle:lifecycle-viewmodel-ktx",
@@ -108,9 +88,8 @@ object Dependencies {
     // https://developer.android.com/studio/releases/gradle-plugin
     // https://androidstudio.googleblog.com/
     // https://maven.google.com/web/index.html
-    val comAndroidToolsBuild_gradle = ComposeDependency(
+    val comAndroidToolsBuild_gradle = DefaultDependency(
         id = "com.android.tools.build:gradle",
-        composeVersion = "7.0.0-alpha12",
         version = "4.0.2"
     )
 
