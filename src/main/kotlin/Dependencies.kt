@@ -6,13 +6,9 @@ object Dependencies {
 
     // https://developer.android.com/jetpack/androidx/versions
     // https://maven.google.com/web/index.html
-    val androidxActivity_activityKtx = DefaultDependency(
-        id = "androidx.activity:activity-ktx",
-        version = "1.2.2"
-    )
-    val androidxActivity_activityCompose = ComposeDependency(
+    val androidxActivity_activityCompose = DefaultDependency(
         id = "androidx.activity:activity-compose",
-        composeVersion = "1.3.0-alpha05"
+        version = "1.3.0-alpha05"
     )
     val androidxAnnotation_annotation = DefaultDependency(
         id = "androidx.annotation:annotation",
@@ -30,17 +26,17 @@ object Dependencies {
         id = "androidx.collection:collection-ktx",
         version = "1.1.0"
     )
-    val androidxComposeMaterial_material = ComposeDependency(
+    val androidxComposeMaterial_material = DefaultDependency(
         id = "androidx.compose.material:material",
-        composeVersion = Versions.compose
+        version = Versions.compose
     )
-    val androidxComposeMaterial_materialIconsExtended = ComposeDependency(
+    val androidxComposeMaterial_materialIconsExtended = DefaultDependency(
         id = "androidx.compose.material:material-icons-extended",
-        composeVersion = Versions.compose
+        version = Versions.compose
     )
-    val androidxComposeRuntime_runtimeLivedata = ComposeDependency(
+    val androidxComposeRuntime_runtimeLivedata = DefaultDependency(
         id = "androidx.compose.runtime:runtime-livedata",
-        composeVersion = Versions.compose
+        version = Versions.compose
     )
     val androidxConstraintlayout_constraintlayout = DefaultDependency(
         id = "androidx.constraintlayout:constraintlayout",
@@ -66,9 +62,9 @@ object Dependencies {
         id = "androidx.lifecycle:lifecycle-livedata-ktx",
         version = "2.3.1"
     )
-    val androidxLifecycle_lifecycleViewmodelCompose = ComposeDependency(
+    val androidxLifecycle_lifecycleViewmodelCompose = DefaultDependency(
         id = "androidx.lifecycle:lifecycle-viewmodel-compose",
-        composeVersion = "1.0.0-alpha03"
+        version = "1.0.0-alpha03"
     )
     val androidxLifecycle_lifecycleViewmodelKtx = DefaultDependency(
         id = "androidx.lifecycle:lifecycle-viewmodel-ktx",
@@ -108,10 +104,9 @@ object Dependencies {
     // https://developer.android.com/studio/releases/gradle-plugin
     // https://androidstudio.googleblog.com/
     // https://maven.google.com/web/index.html
-    val comAndroidToolsBuild_gradle = ComposeDependency(
+    val comAndroidToolsBuild_gradle = DefaultDependency(
         id = "com.android.tools.build:gradle",
-        composeVersion = "7.0.0-alpha12",
-        version = "4.0.2"
+        version = "7.0.0-alpha12"
     )
 
     // https://github.com/bumptech/glide
@@ -142,7 +137,7 @@ object Dependencies {
     // https://github.com/jetbrains/kotlin
     val orgJetbrainsKotlin_kotlinGradlePlugin = DefaultDependency(
         id = "org.jetbrains.kotlin:kotlin-gradle-plugin",
-        version = "1.4.31"
+        version = "1.4.30"
     )
 
     // https://github.com/Kotlin/kotlinx.coroutines

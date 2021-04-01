@@ -16,33 +16,19 @@ sealed class Dependency {
     }
 }
 
-open class DefaultDependency(
-    final override val id: String,
-    version: String
+class DefaultDependency(
+    override val id: String,
+    private val version: String
 ) : Dependency() {
-    private val notation: String = "$id:$version"
-
-    fun notation(version: String? = null): String {
-        return if (version == null) notation else "$id:$version"
-    }
-}
-
-class ComposeDependency(
-    id: String,
-    composeVersion: String,
-    version: String = composeVersion
-) : DefaultDependency(id, version) {
-    private val composeNotation: String = "${this.id}:$composeVersion"
-
-    fun composeNotation(composeVersion: String? = null): String {
-        return if (composeVersion == null) composeNotation else "$id:$composeVersion"
+    fun notation(version: String = this.version): String {
+        return "$id:$version"
     }
 }
 
 class DevDependency(private val name: String) : Dependency() {
     override val id: String = "com.github.dev-ebnbin:$name"
 
-    fun devNotation(project: Project, version: String): Any {
+    fun notation(project: Project, version: String): Any {
         return if (project.rootProject.getLocalProperty("dev.publish") != "false") {
             "$id:$version"
         } else {
