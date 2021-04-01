@@ -16,14 +16,26 @@ sealed class Dependency {
     }
 }
 
-class DefaultDependency(
-    override val id: String,
+open class DefaultDependency(
+    final override val id: String,
     version: String
 ) : Dependency() {
     private val notation: String = "$id:$version"
 
     fun notation(version: String? = null): String {
         return if (version == null) notation else "$id:$version"
+    }
+}
+
+class ComposeDependency(
+    id: String,
+    composeVersion: String,
+    version: String = composeVersion
+) : DefaultDependency(id, version) {
+    private val composeNotation: String = "$id:$composeVersion"
+
+    fun composeNotation(composeVersion: String? = null): String {
+        return if (composeVersion == null) composeNotation else "$id:$composeVersion"
     }
 }
 

@@ -1,17 +1,17 @@
 object Dependencies {
-    val comGithubEbnbin_eb = DevDependency(
+    val comGithubDevEbnbin_eb = DevDependency(
         name = "eb",
         version = "0.0.29"
     )
-    val comGithubEbnbin_ebui = DevDependency(
+    val comGithubDevEbnbin_ebui = DevDependency(
         name = "ebui",
         version = "0.0.15"
     )
-    val comGithubEbnbin_ebdev = DevDependency(
+    val comGithubDevEbnbin_ebdev = DevDependency(
         name = "ebdev",
         version = "0.0.5"
     )
-    val comGithubEbnbin_openmojiPicker = DevDependency(
+    val comGithubDevEbnbin_openmojiPicker = DevDependency(
         name = "openmoji-picker",
         version = "0.0.20"
     )
@@ -20,11 +20,15 @@ object Dependencies {
     // https://maven.google.com/web/index.html
     val androidxActivity_activityKtx = DefaultDependency(
         id = "androidx.activity:activity-ktx",
-        version = "1.2.0"
+        version = "1.2.2"
+    )
+    val androidxActivity_activityCompose = ComposeDependency(
+        id = "androidx.activity:activity-compose",
+        composeVersion = "1.3.0-alpha05"
     )
     val androidxAnnotation_annotation = DefaultDependency(
         id = "androidx.annotation:annotation",
-        version = "1.1.0"
+        version = "1.2.0"
     )
     val androidxAppcompat_appcompat = DefaultDependency(
         id = "androidx.appcompat:appcompat",
@@ -37,6 +41,18 @@ object Dependencies {
     val androidxCollection_collectionKtx = DefaultDependency(
         id = "androidx.collection:collection-ktx",
         version = "1.1.0"
+    )
+    val androidxComposeMaterial_material = ComposeDependency(
+        id = "androidx.compose.material:material",
+        composeVersion = "1.0.0-beta03"
+    )
+    val androidxComposeMaterial_materialIconsExtended = ComposeDependency(
+        id = "androidx.compose.material:material-icons-extended",
+        composeVersion = "1.0.0-beta03"
+    )
+    val androidxComposeRuntime_runtimeLivedata = ComposeDependency(
+        id = "androidx.compose.runtime:runtime-livedata",
+        composeVersion = "1.0.0-beta03"
     )
     val androidxConstraintlayout_constraintlayout = DefaultDependency(
         id = "androidx.constraintlayout:constraintlayout",
@@ -52,7 +68,7 @@ object Dependencies {
     )
     val androidxFragment_fragmentKtx = DefaultDependency(
         id = "androidx.fragment:fragment-ktx",
-        version = "1.3.0"
+        version = "1.3.2"
     )
     val androidxGridlayout_gridlayout = DefaultDependency(
         id = "androidx.gridlayout:gridlayout",
@@ -60,11 +76,15 @@ object Dependencies {
     )
     val androidxLifecycle_lifecycleLivedataKtx = DefaultDependency(
         id = "androidx.lifecycle:lifecycle-livedata-ktx",
-        version = "2.3.0"
+        version = "2.3.1"
+    )
+    val androidxLifecycle_lifecycleViewmodelCompose = ComposeDependency(
+        id = "androidx.lifecycle:lifecycle-viewmodel-compose",
+        composeVersion = "1.0.0-alpha03"
     )
     val androidxLifecycle_lifecycleViewmodelKtx = DefaultDependency(
         id = "androidx.lifecycle:lifecycle-viewmodel-ktx",
-        version = "2.3.0"
+        version = "2.3.1"
     )
     val androidxPreference_preferenceKtx = DefaultDependency(
         id = "androidx.preference:preference-ktx",
@@ -98,9 +118,11 @@ object Dependencies {
     )
 
     // https://developer.android.com/studio/releases/gradle-plugin
+    // https://androidstudio.googleblog.com/
     // https://maven.google.com/web/index.html
-    val comAndroidToolsBuild_gradle = DefaultDependency(
+    val comAndroidToolsBuild_gradle = ComposeDependency(
         id = "com.android.tools.build:gradle",
+        composeVersion = "7.0.0-alpha12",
         version = "4.0.2"
     )
 
@@ -126,13 +148,13 @@ object Dependencies {
     // https://github.com/square/leakcanary
     val comSquareupLeakcanary_leakcanaryAndroid = DefaultDependency(
         id = "com.squareup.leakcanary:leakcanary-android",
-        version = "2.6"
+        version = "2.7"
     )
 
     // https://github.com/jetbrains/kotlin
     val orgJetbrainsKotlin_kotlinGradlePlugin = DefaultDependency(
         id = "org.jetbrains.kotlin:kotlin-gradle-plugin",
-        version = "1.4.31"
+        version = "1.4.32"
     )
 
     // https://github.com/Kotlin/kotlinx.coroutines
