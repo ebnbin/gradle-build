@@ -10,6 +10,10 @@ object Dependencies {
         id = "androidx.activity:activity-ktx",
         version = "1.2.2"
     )
+    val androidxActivity_activityCompose = DefaultDependency(
+        id = "androidx.activity:activity-compose",
+        version = "1.3.0-alpha05"
+    )
     val androidxAnnotation_annotation = DefaultDependency(
         id = "androidx.annotation:annotation",
         version = "1.2.0"
@@ -25,6 +29,18 @@ object Dependencies {
     val androidxCollection_collectionKtx = DefaultDependency(
         id = "androidx.collection:collection-ktx",
         version = "1.1.0"
+    )
+    val androidxComposeMaterial_material = DefaultDependency(
+        id = "androidx.compose.material:material",
+        version = "1.0.0-beta03"
+    )
+    val androidxComposeMaterial_materialIconsExtended = DefaultDependency(
+        id = "androidx.compose.material:material-icons-extended",
+        version = "1.0.0-beta03"
+    )
+    val androidxComposeRuntime_runtimeLivedata = DefaultDependency(
+        id = "androidx.compose.runtime:runtime-livedata",
+        version = "1.0.0-beta03"
     )
     val androidxConstraintlayout_constraintlayout = DefaultDependency(
         id = "androidx.constraintlayout:constraintlayout",
@@ -49,6 +65,10 @@ object Dependencies {
     val androidxLifecycle_lifecycleLivedataKtx = DefaultDependency(
         id = "androidx.lifecycle:lifecycle-livedata-ktx",
         version = "2.3.1"
+    )
+    val androidxLifecycle_lifecycleViewmodelCompose = DefaultDependency(
+        id = "androidx.lifecycle:lifecycle-viewmodel-compose",
+        version = "1.0.0-alpha03"
     )
     val androidxLifecycle_lifecycleViewmodelKtx = DefaultDependency(
         id = "androidx.lifecycle:lifecycle-viewmodel-ktx",
@@ -90,7 +110,7 @@ object Dependencies {
     // https://maven.google.com/web/index.html
     val comAndroidToolsBuild_gradle = DefaultDependency(
         id = "com.android.tools.build:gradle",
-        version = "4.0.2"
+        version = "7.0.0-alpha12"
     )
 
     // https://github.com/bumptech/glide
@@ -121,7 +141,7 @@ object Dependencies {
     // https://github.com/jetbrains/kotlin
     val orgJetbrainsKotlin_kotlinGradlePlugin = DefaultDependency(
         id = "org.jetbrains.kotlin:kotlin-gradle-plugin",
-        version = "1.4.32"
+        version = "1.4.31"
     )
 
     // https://github.com/Kotlin/kotlinx.coroutines
