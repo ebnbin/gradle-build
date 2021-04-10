@@ -8,7 +8,7 @@ object Dependencies {
     // https://maven.google.com/web/index.html
     val androidxActivity_activityCompose = DefaultDependency(
         id = "androidx.activity:activity-compose",
-        version = "1.3.0-alpha05"
+        version = "1.3.0-alpha06"
     )
     val androidxAnnotation_annotation = DefaultDependency(
         id = "androidx.annotation:annotation",
@@ -64,7 +64,7 @@ object Dependencies {
     )
     val androidxLifecycle_lifecycleViewmodelCompose = DefaultDependency(
         id = "androidx.lifecycle:lifecycle-viewmodel-compose",
-        version = "1.0.0-alpha03"
+        version = "1.0.0-alpha04"
     )
     val androidxLifecycle_lifecycleViewmodelKtx = DefaultDependency(
         id = "androidx.lifecycle:lifecycle-viewmodel-ktx",
@@ -76,7 +76,7 @@ object Dependencies {
     )
     val androidxRecyclerview_recyclerview = DefaultDependency(
         id = "androidx.recyclerview:recyclerview",
-        version = "1.1.0"
+        version = "1.2.0"
     )
     val androidxRoom_roomCompiler = DefaultDependency(
         id = "androidx.room:room-compiler",
@@ -106,7 +106,7 @@ object Dependencies {
     // https://maven.google.com/web/index.html
     val comAndroidToolsBuild_gradle = DefaultDependency(
         id = "com.android.tools.build:gradle",
-        version = "7.0.0-alpha12"
+        version = "7.0.0-alpha14"
     )
 
     // https://github.com/bumptech/glide
@@ -137,7 +137,7 @@ object Dependencies {
     // https://github.com/jetbrains/kotlin
     val orgJetbrainsKotlin_kotlinGradlePlugin = DefaultDependency(
         id = "org.jetbrains.kotlin:kotlin-gradle-plugin",
-        version = "1.4.31"
+        version = "1.4.32"
     )
 
     // https://github.com/Kotlin/kotlinx.coroutines
