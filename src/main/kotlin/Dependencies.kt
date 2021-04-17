@@ -1,13 +1,13 @@
 object Dependencies {
-    val comGithubDevEbnbin_eb = DevDependency("eb")
-    val comGithubDevEbnbin_ebui = DevDependency("ebui")
-    val comGithubDevEbnbin_ebdev = DevDependency("ebdev")
-    val comGithubDevEbnbin_openmojiPicker = DevDependency("openmoji-picker")
+    val devEbnbin_eb = DevDependency("eb")
+    val devEbnbin_ebui = DevDependency("ebui")
+    val devEbnbin_ebdev = DevDependency("ebdev")
+    val devEbnbin_openmojiPicker = DevDependency("openmoji-picker")
 
     // https://developer.android.com/jetpack/androidx/versions
     // https://maven.google.com/web/index.html
-    val androidxActivity_activity = DefaultDependency(
-        id = "androidx.activity:activity",
+    val androidxActivity_activityKtx = DefaultDependency(
+        id = "androidx.activity:activity-ktx",
         version = "1.2.2"
     )
     val androidxAnnotation_annotation = DefaultDependency(
