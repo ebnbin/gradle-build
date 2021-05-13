@@ -8,7 +8,7 @@ object Dependencies {
     // https://maven.google.com/web/index.html
     val androidxActivity_activityKtx = DefaultDependency(
         id = "androidx.activity:activity-ktx",
-        version = "1.2.2"
+        version = "1.2.3"
     )
     val androidxAnnotation_annotation = DefaultDependency(
         id = "androidx.annotation:annotation",
@@ -40,7 +40,7 @@ object Dependencies {
     )
     val androidxFragment_fragmentKtx = DefaultDependency(
         id = "androidx.fragment:fragment-ktx",
-        version = "1.3.2"
+        version = "1.3.3"
     )
     val androidxGridlayout_gridlayout = DefaultDependency(
         id = "androidx.gridlayout:gridlayout",
@@ -64,11 +64,11 @@ object Dependencies {
     )
     val androidxRoom_roomCompiler = DefaultDependency(
         id = "androidx.room:room-compiler",
-        version = "2.2.6"
+        version = "2.3.0"
     )
     val androidxRoom_roomKtx = DefaultDependency(
         id = "androidx.room:room-ktx",
-        version = "2.2.6"
+        version = "2.3.0"
     )
     val androidxSwiperefreshlayout_swiperefreshlayout = DefaultDependency(
         id = "androidx.swiperefreshlayout:swiperefreshlayout",
@@ -120,7 +120,7 @@ object Dependencies {
     // https://github.com/jetbrains/kotlin
     val orgJetbrainsKotlin_kotlinGradlePlugin = DefaultDependency(
         id = "org.jetbrains.kotlin:kotlin-gradle-plugin",
-        version = "1.4.32"
+        version = "1.5.0"
     )
 
     // https://github.com/Kotlin/kotlinx.coroutines
